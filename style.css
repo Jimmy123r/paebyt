@@ -1,0 +1,31 @@
+body{
+  background-color:#D9CAB3;
+
+
+}
+
+  form.formulario1{
+    background-color:#F9E4C8;/*background-color : es para el fondo*/
+  }
+
+  input.boton{
+    height: 50px;  /*es para la altura*/
+    width: 80px;/*es para el ancho*/
+    background-color:blue;
+    border-radius:200px;/*es para el borde*/
+    color:white;
+    font-size: 1.3em;/*es para como se va aver nuestra tecla grande o chico*/
+
+
+  }
+  /*al hacer esto al poner el mouse encima de la letra
+  se colorea de color*/
+  center:hover {
+    color:orange;
+
+  }
+  /**/
+  img{
+    width:500px;
+    background-color:orange;
+  }
