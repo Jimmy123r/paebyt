@@ -1,0 +1,48 @@
+.texto1{
+  color:blue;
+}
+.texto2{
+  color:green;
+}
+/* para asignar varios pero dentro del div pero sin selecionar los demas
+  */
+div p, div h2 {
+  color:orange;
+
+}
+
+*/*para * selecionar todo */{
+  font-size:24px;
+
+
+}
+/*
+.color{
+color:#ff0000;
+}
+.color{
+  color: rgb(0,0,255);
+}*/
+
+  /*
+  .color{
+    border:5px blue double;
+  }
+   dotted
+   dashed
+   solid
+   double
+   groove:3d
+   ridge:3d
+   inset:3d
+   outset:3d
+   none
+   hidden
+   */
+   .color{
+     border-style:  solid;
+     border-color: red;
+     border-radius: 5px;
+     border-width: 5px;
+   }
+
