@@ -1,0 +1,60 @@
+/*agregue todos los valores*/
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+p{
+  display: inline-block;
+}
+/*parrafo de arriba*/
+.padre_arriba{
+  position: relative;
+  top: 200px;
+  bottom: 0px;
+  left: -10px;
+  right: 0px;
+}
+.arriba{
+  width: 200px;
+  border:5px inset;
+  border-color: #CDF2CA;
+  padding: 10px 10px;
+  margin:20px;
+  font-size: 20px;
+
+}
+/*parrafo del medio*/
+.padre_medio{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+.medio{
+  background-color: #FF7777;
+    width: 200px;
+    font-size: 20px;
+    border: 5px inset;
+    border-color: #CDF2CA;
+    margin:200px;
+    padding: 10px 10px ;
+}
+/*parrafo de abajo*/
+.padre_abajo{
+  position: relative;
+  top: -200px;
+  bottom: 0px;
+  left: 400px;
+  right: 0px;
+}
+.abajo{
+  background-color: #DBD0C0;
+  width:200px;
+  border: 5px inset;
+  font-size: 20px;
+  padding: 10px 10px;
+  margin:10px;
+  border-color: #CDF2CA;
+}
