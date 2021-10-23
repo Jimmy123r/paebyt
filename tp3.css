@@ -20,7 +20,8 @@ p{
   border:5px inset;
   border-color: #CDF2CA;
   padding: 10px 10px;
-  margin:20px;
+  margin-top: -150px;
+  margin-left: 10px;
   font-size: 20px;
 
 }
