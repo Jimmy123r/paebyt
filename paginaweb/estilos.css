@@ -1,0 +1,278 @@
+    /* valores a los elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;/* auque le pongamos un borde ese tamaño de borde nunca se va a sumar al tamaño que tiene la caja*/
+}
+
+body {
+    font-family: 'open sans';/* tipo de letra humanista*/
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;/* definir el ancho maximo, impide que le ancho se haga mas grande*/
+    margin: auto;
+    overflow: hidden;/*todo el contenido que sobra lo elimina*/
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background-color: #bc4e9c;
+    background: url(../img/portada.jpg);
+    background-size: cover;/* especifica el tamaño de las imágenes de fondo.*/
+    background-attachment: fixed;/*  determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+    position: relative;
+}
+
+nav{
+    text-align: right;/*alinear el texto hacia la derecha*/
+    padding: 30px 50px;
+}
+
+nav > a{/* nav es padre  de a*/
+    color:#fff;
+    font-weight: 300px;/* el grosor de la letra*/
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{/*hover es cuando le pasamos el mouse encima"efecto"*/
+    text-decoration: underline;/*poner linea  debajo de la letra*/
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;/*indica la alineación de un elemento dentro del bloque que lo contiene*/
+    justify-content: center;/*justify-content define cómo el navegador distribuye el espacio entre y alrededor de los items flex,*/
+    flex-direction: column;/*especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés)*/
+    text-align: center;
+}
+
+.textos-header h1{/* textos-header dentro de h2*/
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{/* textos-header dentro de h2*/
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+
+
+/* sobre nuestro producto */
+
+main.sobre-nosotros{/*todos los main y sobre-nosotros*/
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;/*alrededor de los items flex*/
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros.contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;/*colocar el elemento en linea*/
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;/*tipo de cursor*/
+
+}
+
+.imagen-port > img{/* selector de hijos img-port desendiente de img*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*como debe mostrarse la imagen*/
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);/*cursor:cambiar la forma de la imagen rotado o reversa etc.*/
+    background: #1C0C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);/*para que funcione el cursor*/
+}
+
+/* clientes*/
+
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetas .tarjeta{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.tarjetas .tarjeta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.tarjetas .tarjeta > .contenido-texto-tarjeta{
+    width: 60%;
+    color: #fff;
+}
+
+.tarjetas .tarjeta > .contenido-texto-tarjeta p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  nuestro equipo*/
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
